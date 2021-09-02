@@ -10,8 +10,11 @@
     margin: 0 auto;
     margin-top: 10%;
     text-align: center;
-    background: #00000080;
-    padding: 20px 30px;
+    background: #ecefef;
+    border-radius: 5px;
+    padding: 40px 50px;
+    //border-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
 }
 
 #login-box h1 {
@@ -45,15 +48,38 @@
 #login-box button {
     border: 0;
     margin-top: 15px;
-    width: 250px;
+    width: 200px;
     height: 30px;
     font-size: 20px;
     font-weight: 1200;
     color: white;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
-    border-radius: 15px;
+    /*background-image: linear-gradient(to right,  #eaf8f8, #e5ca79,#eaf8f8);*/
+    border-radius: 0px;
+    background-color: #21a675;
+}
+#login-box button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+#login-box button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
 }
 
+#login-box button:hover span {
+    padding-right: 25px;
+}
+
+#login-box button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
 #message-box {
     color: white;
     position: fixed;

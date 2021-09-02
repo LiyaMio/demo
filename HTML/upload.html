@@ -9,11 +9,14 @@
     />
     <link rel="stylesheet" href="../CSS/login.css">
     <link rel="stylesheet" href="../CSS/font-awesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         body{
-            /*background: #98c686;*/
+            background: #eae8e8;
             overflow: hidden;
-            background-image: url("../pic/true.gif");
+            /*background-image: url("../pic/true.gif");*/
         }
         /*#backG{*/
         /*    border: 2px solid whitesmoke;*/
@@ -54,25 +57,46 @@
         /*    height: 2px;*/
         /*    !*background-image: linear-gradient(to right, #ccc,#42975b, #cccccc);*!*/
         /*}*/
+
     </style>
 </head>
 <body>
 <!--<div id="backG"></div>-->
 <!--<div id="newA"></div>-->
 <!--<div id="newD"></div>-->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #00A383;">
+    <a class="navbar-brand" href="#" style="color:white">知疫行</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#" style="color:white">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white">
+                    History</a>
+            </li>
+        </ul>
+        <a class="nav-link" href="#" style="color:white">
+            <i class="fa fa-user-circle " aria-hidden="true" ></i>
+        </a>
+    </div>
+</nav>
 <div id="login-box">
-    <h1>UpLoad</h1>
+    <h1 style="color: #00A383">UpLoad</h1>
     <div class="newA">
-        <button type='submit' style="color:white">new alghorithm</button>
+        <button type='submit' style="color:white"><span>new alghorithm</span></button>
 <!--        <i class="fa fa-code" aria-hidden="true" style="color:white" type="button">new alghorithm</i>-->
     </div>
 
     <div class="oldA">
-        <button type='submit' style="color:white">old  alghorithm</button>
+        <button type='submit' style="color:white"><span>old  alghorithm</span></button>
 <!--        <i class="fa fa-code" aria-hidden="true" style="color:white">  old  alghorithm</i>-->
     </div>
     <div class="dataset">
-        <button type='submit' style="color:white">test data</button>
+        <button type='submit' style="color:white"><span>test data</span></button>
     </div>
 </div>
 </body>
