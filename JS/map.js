@@ -28,11 +28,7 @@ function loadMapScenario() {
     bmp.push([44.6149, -123.1941]);
     bmp.push([43.6149, -123.1941]);
     //Create custom Pushpin
-    for(var i=0;i<5;++i) {
-        var center =  new Microsoft.Maps.Location(bmp[i][0],bmp[i][1]);
-        var pin = new Microsoft.Maps.Pushpin(center, {
-            color:'darkblue'
-        });
+
 
         //Add the pushpin to the map
         map.entities.push(pin);

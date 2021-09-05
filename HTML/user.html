@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>user</title>
+    <title>upload</title>
     <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -13,6 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <style>
+
         #profile{
             text-align:center;
             padding:100px 100px;
@@ -41,9 +42,74 @@
             border-radius: 0px;
             /*background-color: #e3eeea;*/
         }
+        .card{
+            height:150px;
+            width:400px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+            position:fixed!important;
+        }
+        #card1{
+            left:30vw;
+            top:17vh;
+        }
+        #card2{
+            left:63vw;
+            top:17vh;
+        }
+        #card3{
+            left:30vw;
+            top:45vh;
+        }
+        #card4{
+            left:63vw;
+            top:45vh;
+        }
+        /*#backG{*/
+        /*    border: 2px solid whitesmoke;*/
+        /*    border-radius: 10px;*/
+        /*    background: white;*/
+        /*    right:5vw;*/
+        /*    left:5vw;*/
+        /*    bottom: 5vh;*/
+        /*    top:5vh;*/
+        /*    width: 90vw;*/
+        /*    height:90vh;*/
+        /*    position:fixed!important;*/
+
+        /*}*/
+        /*#newA{*/
+        /*    !*height:2px;*!*/
+        /*    !*border:none;*!*/
+        /*    /border-top:2px solid darkgrey;*/
+        /*    width:20%;*/
+        /*    left:15vw;*/
+        /*    top: 42vh;*/
+        /*    position:fixed!important;*/
+        /*    margin:0 auto;*/
+        /*    border: 0;*/
+        /*    height: 2px;*/
+        /*    !*background-image: linear-gradient(to right, #ccc,#42975b, #cccccc);*!*/
+        /*}*/
+        /*#newD{*/
+        /*    !*height:2px;*!*/
+        /*    !*border:none;*!*/
+        /*    border-top:2px solid darkgrey;*/
+        /*    width:20%;*/
+        /*    right:25vw;*/
+        /*    top: 42vh;*/
+        /*    position:fixed!important;*/
+        /*    margin:0 auto;*/
+        /*    border: 0;*/
+        /*    height: 2px;*/
+        /*    !*background-image: linear-gradient(to right, #ccc,#42975b, #cccccc);*!*/
+        /*}*/
+
     </style>
 </head>
 <body>
+<!--<div id="backG"></div>-->
+<!--<div id="newA"></div>-->
+<!--<div id="newD"></div>-->
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #00A383;">
     <a class="navbar-brand" href="#" style="color:white">知疫行</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,6 +135,10 @@
     <p>nickname</p>
     <button class="editprofile" onclick="">edit profile</button>
 </div>
-<div></div>
+<div class="card" id="card1"> First </div>
+<div class="card" id="card2"> Second </div>
+<div class="card" id="card3"> Third </div>
+<div class="card" id="card4"> Fourth </div>
+
 </body>
 </html>

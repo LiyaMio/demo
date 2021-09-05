@@ -1,0 +1,19 @@
+#runtime{
+    right:70vw;
+    width: 30vw;
+    height:50vh;
+    position:fixed!important;
+}
+#memory{
+    top:50vh;
+    right:70vw;
+    width: 30vw;
+    height:50vh;
+    position:fixed!important;
+}
+#myMap{
+    left:30vw;
+    width: 70vw;
+    height: 100vh;
+    position:fixed!important;
+}
