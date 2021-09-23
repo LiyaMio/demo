@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca6dc1b8-19e3-48c2-bf0e-a162d6acb40f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CSS/bingmap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/echarts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/map.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/google map.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/google map.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/line.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/line.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/upload.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/op.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/map.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +72,7 @@
       <workItem from="1630835965096" duration="406000" />
       <workItem from="1630836568395" duration="3017000" />
       <workItem from="1630839934073" duration="7148000" />
+      <workItem from="1630920916193" duration="6067000" />
     </task>
     <servers />
   </component>
@@ -97,7 +96,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/HTML/google map.html</url>
-          <line>30</line>
+          <line>19</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

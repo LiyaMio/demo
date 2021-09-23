@@ -36,25 +36,15 @@
 <div id='myMap'></div>
 
 <script  type="text/javascript">
-
     var chartDom = document.getElementById('runtime');
     var myChart = echarts.init(chartDom);
-    var option;
-    option = {
+    myChart.setoption({
         title:{
             // left:"5%",
             text:'运行时间对比'
         },
         tooltip: {
             trigger: 'axis'
-        },
-        dataset:{
-            source: [
-                ['dataSize', '10000', '20000', '30000', '40000', '50000', '100000'],
-                ['newA', 56.5, 82.1, 88.7, 70.1, 53.4, 85.1],
-                ['oldA', 51.1, 51.4, 55.1, 53.3, 73.8, 68.7],
-
-            ]
         },
         legend: {
             data: ['newA', 'oldA']
@@ -72,16 +62,44 @@
         },
         xAxis: {
             type: 'category',
+            data:  []
         },
         yAxis: {
             type: 'value'
         },
         series: [
-            {type: 'line', smooth: true, seriesLayoutBy: 'row', emphasis: {focus: 'series'}},
-            {type: 'line', smooth: true, seriesLayoutBy: 'row', emphasis: {focus: 'series'}},
+            {
+                name: 'newA',
+                type: 'line',
+                smooth:true,
+                data:[]
+            },
+            {
+                name: 'oldA',
+                type: 'line',
+                smooth:true,
+                data:[]
+            },
         ]
-    };
-    option && myChart.setOption(option);
+    });
+    $.get('dataTime.json').done(function(data){
+        mychart.setOption({
+            xAxis:{
+                data:data.Categories
+            },
+            series:[
+
+                {
+                    name:'newA',
+                    data:data.data
+                },
+                {
+                    name:'oldA',
+                    data:data.data
+                }
+            ]
+        });
+    });
 </script>
 <script  type="text/javascript">
      var chartDom = document.getElementById('memory');
@@ -130,7 +148,7 @@
                  },
              ]
      });
-     $.get('data.json').done(function(data){
+     $.get('dataMemory.json').done(function(data){
          mychart.setOption({
              xAxis:{
                  data:data.Categories
@@ -140,68 +158,14 @@
                  {
                      name:'newA',
                      data:data.data
+                 },
+                 {
+                     name:'oldA',
+                     data:data.data
                  }
              ]
          });
      });
-    // var chartDom = document.getElementById('memory');
-    // var myChart = echarts.init(chartDom);
-    // var option;
-    // option = {
-    //     title:{
-    //         // left:"5%",
-    //         text:'内存使用对比'
-    //     },
-    //     tooltip: {
-    //         trigger: 'axis'
-    //     },
-    //     // dataset:{
-    //     //     source: [
-    //     //         ['dataSize', '10000', '20000', '30000', '40000', '50000', '100000'],
-    //     //
-    //     //
-    //     //
-    //     //     ]
-    //     // },
-    //     legend: {
-    //         data: ['newA', 'oldA']
-    //     },
-    //     grid: {
-    //         left: '3%',
-    //         right: '4%',
-    //         bottom: '3%',
-    //         containLabel: true
-    //     },
-    //     toolbox: {
-    //         feature: {
-    //             saveAsImage: {}
-    //         }
-    //     },
-    //     xAxis: {
-    //         type: 'category',
-    //         data:  ['10000', '20000', '30000', '40000', '50000', '100000']
-    //     },
-    //     yAxis: {
-    //         type: 'value'
-    //     },
-    //     series: [
-    //         {
-    //             name: 'newA',
-    //             type: 'line',
-    //             smooth:true,
-    //             stack: '总量',
-    //             data:[]
-    //         },
-    //         {
-    //             name: 'oldA',
-    //             type: 'line',
-    //             smooth:true,
-    //             stack: '总量',
-    //             data:[]
-    //         },
-    //     ]
-    // };
-    // option && myChart.setOption(option);
 </script>
 </body>
 </html>
