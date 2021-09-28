@@ -1,3 +1,6 @@
+body{
+    background-color: azure;
+}
 #runtime{
     right:70vw;
     width: 30vw;
@@ -12,8 +15,34 @@
     position:fixed!important;
 }
 #myMap{
-    left:30vw;
-    width: 70vw;
-    height: 100vh;
+    /*left:25vw;*/
+    /*!*原始左30vw 宽70vw*!*/
+    /*width: 75vw;*/
+    /*height: 100vh;*/
+    /*position:fixed!important;*/
+    z-index: -1;
+}
+.leftNav{
+    width:25vw;
+    height:100vh;
+    position:fixed!important;
+
+}
+#dataset{
+    left:85vw;
+    top:85vh;
+    position:fixed!important;
+}
+#x-btn{
+    left:25vw;
+}
+.btn-info{
+    color:white;
+
+}
+.list-group{
+    left:1vw;
+    width:28vw;
+    top:15vh;
     position:fixed!important;
 }

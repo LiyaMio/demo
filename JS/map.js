@@ -43,3 +43,4 @@ function loadMapScenario() {
     // map.layers.insert(layer);
 
 }
+
