@@ -6,6 +6,7 @@
     <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
     <script type='text/javascript'
             src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Ai4z67SFmR5vWrxe5ftXjMV0Zk0VZJX12kyFVJc5_elLbzAVHkCDpwgGpNvo8wIN'
@@ -15,31 +16,32 @@
     <script src="../JS/map.js"></script>
     <script src="../JS/echarts.js"></script>
     <link rel="stylesheet" href="../CSS/bingmap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
-<body  onload='loadMapScenario();'style="overflow: hidden">
-
+<body onload='loadMapScenario();' style="overflow: hidden">
+<div id='myMap'></div>
 <div class="leftNav">
-    <button class="btn btn-info" id="dataset" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-        choose your dataset
+    <button class="btn btn-info" id="dataset" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" style="color:black">
+        <i class="bi bi-arrow-right"></i>
     </button>
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" id="x-btn"></button>
-            <div class="list-group">
-                <button class="list-group-item">test data</button>
-                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                    Cras justo odio
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-                <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-                <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-                <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"
+                    id="x-btn"></button>
+
+        </div>
+        <div class="btn-con">
+            <div class="btn-group-vertical" id="btnContainer" role="group" aria-label="Basic radio toggle button group">
             </div>
         </div>
-
+        <div class="choose">
+            <button type="button"  id="choice" class="btn btn-outline-primary">choose</button>
+            <button type="button" id="run" class="btn btn-outline-primary">run</button>
+        </div>
     </div>
 </div>
-<div id='myMap'></div>
+
 </body>
 </html>

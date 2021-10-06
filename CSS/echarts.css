@@ -1,0 +1,22 @@
+body{
+    overflow: hidden;
+}
+#runtime{
+    left:3vw;
+    top:5vh;
+    width: 30vw;
+    height:45vh;
+}
+#memory{
+    top:5vh;
+    left:3vw;
+    width: 30vw;
+    height:45vh;
+}
+#variance{
+    top:5vh;
+    left:34vw;
+    width: 30vw;
+    height:45vh;
+    position:absolute;
+}

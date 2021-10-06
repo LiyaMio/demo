@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ca6dc1b8-19e3-48c2-bf0e-a162d6acb40f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HTML/new map.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/echarts.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/bingmap.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/bingmap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/google map.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/google map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/line.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/line.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/new map.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/new map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/echarts.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/echarts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/map.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +28,7 @@
       </list>
     </option>
   </component>
+  <component name="GOROOT" url="file://E:/work/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -43,6 +51,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable..is.expanded" value="false" />
+    <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -51,6 +65,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="liveEdit" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -74,6 +89,7 @@
       <workItem from="1632401945784" duration="324000" />
       <workItem from="1632833472083" duration="98000" />
       <workItem from="1632833590898" duration="10187000" />
+      <workItem from="1632903135884" duration="27478000" />
     </task>
     <servers />
   </component>
@@ -102,5 +118,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
