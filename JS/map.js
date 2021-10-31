@@ -86,7 +86,7 @@ function appendDAata() {
 
     for(var i=1;i<=100;++i)
     {
-        $('#realData').append("<a class=\"dropdown-item\" href=\"#\" type='button' onclick='chooseData() mapping()'>test" + i + "</a>")
+        $('#realData').append("<a class=\"dropdown-item\" href=\"#\" type='button' onclick='chooseData();mapping()'>test" + i + "</a>")
     }
 
 }
