@@ -5,7 +5,7 @@ function setRuntime(){
     option = {
         title:{
             // left:"5%",
-            text:'运行时间对比'
+            text:'运行时间'
         },
         tooltip: {
             trigger: 'axis'

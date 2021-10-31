@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca6dc1b8-19e3-48c2-bf0e-a162d6acb40f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/HTML/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/bingmap.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/bingmap.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/echarts.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/echarts.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/line.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/line.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/new map.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/new map.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/echarts.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/echarts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/map.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +89,10 @@
       <workItem from="1632401945784" duration="324000" />
       <workItem from="1632833472083" duration="98000" />
       <workItem from="1632833590898" duration="10187000" />
-      <workItem from="1632903135884" duration="28467000" />
+      <workItem from="1632903135884" duration="28660000" />
+      <workItem from="1634126589624" duration="404000" />
+      <workItem from="1634647448096" duration="300000" />
+      <workItem from="1635075902305" duration="33038000" />
     </task>
     <servers />
   </component>
