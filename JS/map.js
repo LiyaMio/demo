@@ -57,12 +57,12 @@ function loadMapScenario() {
 
 
 }
-// function chooseData() {
-//    if(document.getElementById("datas").style.margin=="auto")
-//         document.getElementById("datas").style.margin="0 auto";
-//    else
-//     document.getElementById("datas").style.margin="auto";
-// }
+function chooseData() {
+   if(document.getElementById("datas").style.margin=="auto")
+        document.getElementById("datas").style.margin="0 auto";
+   else
+    document.getElementById("datas").style.margin="auto";
+}
 function chooseAlg() {
     $.ajax({
         type:"POST",

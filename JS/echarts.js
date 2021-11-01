@@ -115,8 +115,8 @@ function setMemory(){
             type: 'value'
         },
         series: [
-            {type: 'line', smooth: true, seriesLayoutBy: 'row', emphasis: {focus: 'series'},data: [56.5, 82.1, 88.7, 70.1, 53.4, 85.1]},
-            {type: 'line', smooth: true, seriesLayoutBy: 'row', emphasis: {focus: 'series'},data: [51.1, 51.4, 55.1, 53.3, 73.8, 68.7]},
+            {name:'oldA',type: 'line', smooth: true, seriesLayoutBy: 'row', emphasis: {focus: 'series'},data: [56.5, 82.1, 88.7, 70.1, 53.4, 85.1]},
+            {name:'newA',type: 'line', smooth: true, seriesLayoutBy: 'row', emphasis: {focus: 'series'},data: [51.1, 51.4, 55.1, 53.3, 73.8, 68.7]},
         ]
     };
     // $.get('dataMemory.json').done(function(data)
