@@ -98,7 +98,9 @@ body {
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
-    margin: auto;
+    position:absolute;
+    bottom: 10px;
+    left:17vh;
 }
 .run{
 
@@ -164,7 +166,7 @@ body {
 #algorithm{
     display: block;
     width: 80%;
-    margin:0 auto;
+    margin:1vh auto;
 }
 #datas{
     display: block;
@@ -173,4 +175,14 @@ body {
 }
 ::-webkit-scrollbar {
     display: none; /* Chrome Safari */
+}
+.dropdown-menu{
+    min-width: 8rem;
+}
+a:focus{
+    color:rgb(121,121,121);
+}
+.list-group-item{
+    width: 15rem;
+
 }

@@ -57,18 +57,26 @@ function loadMapScenario() {
 
 
 }
-function chooseData() {
-   if(document.getElementById("algorithm").style.margin=="auto")
-        document.getElementById("algorithm").style.margin="0 auto";
-   else
-    document.getElementById("algorithm").style.margin="auto";
+// function chooseData() {
+//    if(document.getElementById("datas").style.margin=="auto")
+//         document.getElementById("datas").style.margin="0 auto";
+//    else
+//     document.getElementById("datas").style.margin="auto";
+// }
+function chooseAlg() {
+    $.ajax({
+        type:"POST",
+        url:'/alg',
+        data:JSON.stringify(document.getElementById()),
+        dataType:'JSON',
+    });
 }
 function mapping() {
     $.ajax({
         type:"POST",
-            url:'/PostServlet',
-            data:JSON.stringify(document.getElementById()),
-            dataType:'JSON',
+        url:'/PostServlet',
+        data:JSON.stringify(document.getElementById()),
+        dataType:'JSON',
     });
     $.POST('data.json').done(function (data)
     {
@@ -86,7 +94,7 @@ function appendDAata() {
 
     for(var i=1;i<=100;++i)
     {
-        $('#realData').append("<a class=\"dropdown-item\" href=\"#\" type='button' onclick='chooseData();mapping()'>test" + i + "</a>")
+        $('.realData').append("<a class=\"dropdown-item\" href=\"#\" type='button' onclick='mapping()'>test" + i + "</a>")
     }
 
 }

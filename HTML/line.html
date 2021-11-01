@@ -4,9 +4,11 @@
     <title>echarts</title>
     <!--    <style type='text/css'>body{margin:0;padding:0;overflow:hidden;font-family:'Segoe UI',Helvetica,Arial,Sans-Serif}</style>-->
     <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
-    <script type='text/javascript' src='https://cn.bing.com/api/maps/mapcontrol?key=Ai4z67SFmR5vWrxe5ftXjMV0Zk0VZJX12kyFVJc5_elLbzAVHkCDpwgGpNvo8wIN'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"  crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../JS/map.js"></script>
     <script src="../JS/echarts.js"></script>
     <link rel="stylesheet" href="../CSS/echarts.css">
@@ -14,9 +16,39 @@
 <body >
 <div id='runtime'><script>setRuntime()</script></div>
 <div id='memory'><script>setMemory()</script></div>
-<div id='variance'><script>setVariance()</script></div>
-<div id='c1'><script>test1()</script></div>
+<!--<div id='variance'><script>setVariance()</script></div>-->
+<!--<div id='c1'><script>test1()</script></div>-->
 <div id='c2'><script>test2()</script></div>
-<div id='c3'><script>test3()</script></div>
+<!--<div id='c3'><script>test3()</script></div>-->
+<div style="padding:10vh ">
+    <table class="table table-bordered table-striped" id="compareTable" >
+        <thead>
+        <tr>
+            <th scope="col">Alg</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+
+        </tr>
+        </tbody>
+    </table>
+</div>
 </body>
 </html>
