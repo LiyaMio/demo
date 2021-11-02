@@ -72,29 +72,51 @@ function chooseAlg() {
     });
 }
 function mapping() {
-    $.ajax({
-        type:"POST",
-        url:'/PostServlet',
-        data:JSON.stringify(document.getElementById()),
-        dataType:'JSON',
-    });
-    $.POST('data.json').done(function (data)
-    {
-        for(var i=0;i<100;++i)
-        {
-            var center = new Microsoft.Maps.Location(data[i].longitude,data[i].latitude);
-            var pin = new Microsoft.Maps.Pushpin(center, {
-                // color:purple
+    // $.ajax({
+    //     type:"POST",
+    //     url:'/PostServlet',
+    //     data:JSON.stringify(document.getElementById()),
+    //     dataType:'JSON',
+    // });
+    // $.POST('data.json').done(function (data)
+    // {
+    //     for(var i=0;i<100;++i)
+    //     {
+    //         var center = new Microsoft.Maps.Location(data[i].longitude,data[i].latitude);
+    //         var pin = new Microsoft.Maps.Pushpin(center, {
+    //             // color:purple
+    //         });
+    //         map.entities.push(pin);
+    //     }
+    // });
+    $(document).ready(function (){
+        $('.chooseData').click(function (){
+            alert("sssssss")
+            $.ajax({
+                type:"get",
+                url:'/data',
+                dataType:'JSON',
+                success:function (data){
+                    console.log(data.data)
+                    for(var i=0;i<100;++i)
+                    {
+                        var center = new Microsoft.Maps.Location(data[i].longitude,data[i].latitude);
+                        var pin = new Microsoft.Maps.Pushpin(center, {
+                            // color:purple
+                        });
+                        console.log(center)
+                        map.entities.push(pin);
+                    }
+                }
             });
-            map.entities.push(pin);
-        }
-    });
+        })
+    })
 }
 function appendDAata() {
 
     for(var i=1;i<=100;++i)
     {
-        $('.realData').append("<a class=\"dropdown-item\" href=\"#\" type='button' onclick='mapping()'>test" + i + "</a>")
+        $('.realData').append("<button class=\"dropdown-item chooseData\">test" + i + "</button>")
     }
 
 }

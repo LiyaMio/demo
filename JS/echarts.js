@@ -40,13 +40,14 @@ function setRuntime(){
         },
         series: [
             {
-
+                name:'oldA',
                 type: 'line',
                 smooth: true,
                 seriesLayoutBy: 'row',
                 emphasis: {focus: 'series'},
                 data: [56.5, 82.1, 88.7, 70.1, 53.4, 85.1]},
             {
+                name:'newA',
                 type: 'line',
                 smooth: true,
                 seriesLayoutBy: 'row',
@@ -251,4 +252,7 @@ function test2(){
 //         ]
 //     };
 //     option && myChart.setOption(option);
+// }
+// function createTab() {
+//
 // }
