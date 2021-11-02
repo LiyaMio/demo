@@ -67,9 +67,12 @@ function chooseAlg() {
     $.ajax({
         type:"POST",
         url:'/alg',
-        data:JSON.stringify(document.getElementById()),
+        data:JSON.stringify(this.id),
         dataType:'JSON',
     });
+}
+function f() {
+    
 }
 function mapping() {
     // $.ajax({
