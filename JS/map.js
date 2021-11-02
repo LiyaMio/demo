@@ -63,11 +63,11 @@ function chooseData() {
    else
     document.getElementById("datas").style.margin="auto";
 }
-function chooseAlg() {
+function chooseAlg(e) {
     $.ajax({
         type:"POST",
         url:'/alg',
-        data:JSON.stringify(this.id),
+        data:JSON.stringify({id:e.id}),
         dataType:'JSON',
     });
 }
