@@ -1,0 +1,89 @@
+/*body {*/
+/*    background: url("../IMG/12345.jpg") center;*/
+/*    background-size: 120% auto;*/
+/*    background-repeat: no-repeat;*/
+/*}*/
+
+#login-box {
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10%;
+    text-align: center;
+    background: #ecefef;
+    border-radius: 5px;
+    padding: 40px 50px;
+    //border-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
+}
+
+#login-box h1 {
+    color: white;
+
+}
+
+#login-box .form .item {
+    margin-top: 15px;
+}
+
+#login-box .form .item input {
+    width: 180px;
+    font-size: 18px;
+    border: 0;
+    border-bottom: 3px solid white;
+    padding: 5px 10px;
+    background: #ffffff00;
+    color: #ffffff;
+}
+
+#login-box .form .item input[placeholder] {
+    color: white;
+}
+
+#login-box .form .item i {
+    font-size: 18px;
+    color: white;
+}
+
+#login-box button {
+    border: 0;
+    margin-top: 15px;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 1200;
+    color: white;
+    /*background-image: linear-gradient(to right,  #eaf8f8, #e5ca79,#eaf8f8);*/
+    border-radius: 0px;
+    background-color: #21a675;
+}
+#login-box button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+#login-box button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#login-box button:hover span {
+    padding-right: 25px;
+}
+
+#login-box button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+#message-box {
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}

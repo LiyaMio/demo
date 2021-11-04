@@ -55,24 +55,24 @@ function setRuntime(){
                 data: [51.1, 51.4, 55.1, 53.3, 73.8, 68.7]},
         ]
     };
-    // $.get('dataTime.json').done(function(data)
-    // {
-    //     myChart.setOption({
-    //         xAxis: {
-    //             data: data.categories
-    //         },
-    //         series: [
-    //             {
-    //
-    //                 data: data.data
-    //             },
-    //             {
-    //
-    //                 data: data.data
-    //             }
-    //         ]
-    //     });
-    // });
+    $.get('dataTime.json').done(function(data)
+    {
+        myChart.setOption({
+            xAxis: {
+                data: data.categories
+            },
+            series: [
+                {
+
+                    data: data.data
+                },
+                {
+
+                    data: data.data
+                }
+            ]
+        });
+    });
     option && myChart.setOption(option);
 }
 function setMemory(){
@@ -120,24 +120,24 @@ function setMemory(){
             {name:'newA',type: 'line', smooth: true, seriesLayoutBy: 'row', emphasis: {focus: 'series'},data: [51.1, 51.4, 55.1, 53.3, 73.8, 68.7]},
         ]
     };
-    // $.get('dataMemory.json').done(function(data)
-    // {
-    //     myChart.setOption({
-    //         xAxis: {
-    //             data: data.categories
-    //         },
-    //         series: [
-    //             {
-    //                 name: 'oldA',
-    //                 data: data.data
-    //             },
-    //             {
-    //                 name: 'newA',
-    //                 data: data.data
-    //             }
-    //         ]
-    //     });
-    // });
+    $.get('dataMemory.json').done(function(data)
+    {
+        myChart.setOption({
+            xAxis: {
+                data: data.categories
+            },
+            series: [
+                {
+                    name: 'oldA',
+                    data: data.data
+                },
+                {
+                    name: 'newA',
+                    data: data.data
+                }
+            ]
+        });
+    });
     option && myChart.setOption(option);
 }
 
@@ -186,24 +186,24 @@ function test2(){
             {name:'newA',type: 'line', smooth: true, seriesLayoutBy: 'row', emphasis: {focus: 'series'},data: [51.1, 51.4, 55.1, 53.3, 73.8, 68.7]},
         ]
     };
-    // $.get('dataTime.json').done(function(data)
-    // {
-    //     myChart.setOption({
-    //         xAxis: {
-    //             data: data.categories
-    //         },
-    //         series: [
-    //             {
-    //                 name: 'oldA',
-    //                 data: data.data
-    //             },
-    //             {
-    //                 name: 'newA',
-    //                 data: data.data
-    //             }
-    //         ]
-    //     });
-    // });
+    $.get('dataTime.json').done(function(data)
+    {
+        myChart.setOption({
+            xAxis: {
+                data: data.categories
+            },
+            series: [
+                {
+                    name: 'oldA',
+                    data: data.data
+                },
+                {
+                    name: 'newA',
+                    data: data.data
+                }
+            ]
+        });
+    });
     option && myChart.setOption(option);
 }
 // function test3(){

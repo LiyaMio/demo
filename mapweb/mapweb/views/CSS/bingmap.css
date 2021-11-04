@@ -1,0 +1,188 @@
+body {
+    background-color: azure;
+}
+
+
+.btn:focus, .btn:active:focus, .btn.active:focus,
+.btn.focus, .btn:active.focus, .btn.active.focus {
+    outline: none !important;
+}
+
+#runtime {
+    right: 70vw;
+    width: 30vw;
+    height: 50vh;
+    position: fixed !important;
+}
+
+#memory {
+    top: 50vh;
+    right: 70vw;
+    width: 30vw;
+    height: 50vh;
+    position: fixed !important;
+}
+
+#myMap {
+    /*left:25vw;*/
+    /*!*原始左30vw 宽70vw*!*/
+    /*width: 75vw;*/
+    /*height: 100vh;*/
+    /*position:fixed!important;*/
+    z-index: -1;
+}
+
+.leftNav {
+    width: 25vw;
+    height: 100vh;
+    position: fixed !important;
+
+}
+
+#dataset {
+    width: 50px;
+    height: 100px;
+    top: 40%;
+    background-color: white;
+    opacity: 50%;
+    border-radius: 0 50px 50px 0;
+    position: fixed !important;
+}
+
+#x-btn {
+    align-self: end;
+}
+
+.btn-info {
+    color: white;
+
+}
+
+.btn-con {
+    height: 60vh;
+    overflow-y: auto;
+    margin: 10px;
+    padding: 5px;
+}
+
+.btn-con::-webkit-scrollbar {
+    display: none;
+}
+
+
+.btn-con .btn {
+    color: black;
+    text-align: left;
+    border-color: #f0f0f0;
+    outline: none !important;
+}
+
+.btn-con .btn:hover {
+    color: white;
+}
+
+.btn-group-vertical {
+    /*left:1vw;*/
+    /*width:28vw;*/
+    /*top:15vh;*/
+    /*position:fixed!important;*/
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.choose {
+    /*position: relative;*/
+    /*top: 5vh;*/
+    /*display: flex;*/
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    position:absolute;
+    bottom: 10px;
+    left:17vh;
+}
+.run{
+
+}
+.choose button {
+    width: 80px;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, .125);
+    background-color: #fff;
+    line-height:15px;
+}
+
+.offcanvas-header .btn-close {
+    margin: inherit;
+    padding: inherit;
+}
+.offcanvas-start
+{
+    width:310px;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown-submenu > a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+.dropdown-submenu:hover > a:after {
+    /*border-left-color: #fff;*/
+}
+.dropdown-submenu.pull-left {
+    float: none;
+}
+.dropdown-submenu.pull-left > .dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+#algorithm{
+    display: block;
+    width: 80%;
+    margin:1vh auto;
+}
+#datas{
+    display: block;
+    width: 80%;
+    margin:1vh auto ;
+}
+::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+}
+.dropdown-menu{
+    min-width: 8rem;
+}
+a:focus{
+    color:rgb(121,121,121);
+}
+.list-group-item{
+    width: 15rem;
+
+}

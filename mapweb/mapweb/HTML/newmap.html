@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>loadmapasyncHTML</title>
+    <!--    <style type='text/css'>body{margin:0;padding:0;overflow:hidden;font-family:'Segoe UI',Helvetica,Arial,Sans-Serif}</style>-->
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type='text/javascript'
+            src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Ai4z67SFmR5vWrxe5ftXjMV0Zk0VZJX12kyFVJc5_elLbzAVHkCDpwgGpNvo8wIN'
+            async defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    <script src="../views/JS/map.js"></script>
+    <script src="../views/JS/echarts.js"></script>
+    <link rel="stylesheet" href="../views/CSS/bingmap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body onload='loadMapScenario();' style="overflow: hidden">
+<div id='myMap'></div>
+<div class="leftNav">
+    <button class="btn btn-info" id="dataset" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" style="color:black">
+        <i class="bi bi-arrow-right"></i>
+    </button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"
+                    id="x-btn"></button>
+
+        </div>
+        <div class="btn-con">
+            <div class="btn-group-vertical" id="btnContainer" role="group" aria-label="Basic radio toggle button group">
+            </div>
+        </div>
+        <div class="choose">
+            <button type="button"  id="choice" class="btn btn-outline-primary">choose</button>
+            <button type="button" id="run" class="btn btn-outline-primary">run</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>echarts</title>
+    <!--    <style type='text/css'>body{margin:0;padding:0;overflow:hidden;font-family:'Segoe UI',Helvetica,Arial,Sans-Serif}</style>-->
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+    <script type='text/javascript' src='https://cn.bing.com/api/maps/mapcontrol?key=Ai4z67SFmR5vWrxe5ftXjMV0Zk0VZJX12kyFVJc5_elLbzAVHkCDpwgGpNvo8wIN'></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../JS/map.js"></script>
+<!--    <script src="../JS/echarts.js"></script>-->
+    <link rel="stylesheet" href="../CSS/echarts.css">
+</head>
+<body >
+<div id='runtime'></div>
+<script type="text/javascript">
+    var chartDom = document.getElementById('runtime');
+    var myChart = echarts.init(chartDom);
+    // var option=({
+    //     title:{
+    //         // left:"5%",
+    //         text:'运行时间对比'
+    //     },
+    //     tooltip: {
+    //         trigger: 'axis'
+    //     },
+    //     legend: {
+    //         data: ['newA', 'oldA']
+    //     },
+    //     grid: {
+    //         left: '3%',
+    //         right: '4%',
+    //         bottom: '3%',
+    //         containLabel: true
+    //     },
+    //     toolbox: {
+    //         feature: {
+    //             saveAsImage: {}
+    //         }
+    //     },
+    //     xAxis: {
+    //         type: 'category',
+    //         data:  []
+    //     },
+    //     yAxis: {
+    //         type: 'value'
+    //     },
+    //     series: [
+    //         {
+    //             name: 'newA',
+    //             type: 'line',
+    //             smooth:true,
+    //             data:[]
+    //         },
+    //         {
+    //             name: 'oldA',
+    //             type: 'line',
+    //             smooth:true,
+    //             data:[]
+    //         },
+    //     ]
+    // });
+
+    $.get('dataTime.json').done(function(data){
+        mychart.setOption({
+            title:{
+                // left:"5%",
+                text:'运行时间对比'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data: ['newA', 'oldA']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis:{
+                type: 'category',
+                data:data.Categories
+            },
+            series:[
+
+                {
+                    name:'newA',
+                    type: 'line',
+                    smooth:true,
+                    data:data.data
+                },
+                {
+                    name:'oldA',
+                    type: 'line',
+                    smooth:true,
+                    data:data.data
+                }
+            ]
+        });
+    });
+
+</script>
+
+
+<!--<script  type="text/javascript">-->
+<!--    var chartDom = document.getElementById('runtime');-->
+<!--    var myChart = echarts.init(chartDom);-->
+<!--    myChart.setoption({-->
+<!--        title:{-->
+<!--            // left:"5%",-->
+<!--            text:'运行时间对比'-->
+<!--        },-->
+<!--        tooltip: {-->
+<!--            trigger: 'axis'-->
+<!--        },-->
+<!--        legend: {-->
+<!--            data: ['newA', 'oldA']-->
+<!--        },-->
+<!--        grid: {-->
+<!--            left: '3%',-->
+<!--            right: '4%',-->
+<!--            bottom: '3%',-->
+<!--            containLabel: true-->
+<!--        },-->
+<!--        toolbox: {-->
+<!--            feature: {-->
+<!--                saveAsImage: {}-->
+<!--            }-->
+<!--        },-->
+<!--        xAxis: {-->
+<!--            type: 'category',-->
+<!--            data:  []-->
+<!--        },-->
+<!--        yAxis: {-->
+<!--            type: 'value'-->
+<!--        },-->
+<!--        series: [-->
+<!--            {-->
+<!--                name: 'newA',-->
+<!--                type: 'line',-->
+<!--                smooth:true,-->
+<!--                data:[]-->
+<!--            },-->
+<!--            {-->
+<!--                name: 'oldA',-->
+<!--                type: 'line',-->
+<!--                smooth:true,-->
+<!--                data:[]-->
+<!--            },-->
+<!--        ]-->
+<!--    });-->
+<!--    $.get('dataTime.json').done(function(data){-->
+<!--        mychart.setOption({-->
+<!--            xAxis:{-->
+<!--                data:data.Categories-->
+<!--            },-->
+<!--            series:[-->
+
+<!--                {-->
+<!--                    name:'newA',-->
+<!--                    data:data.data-->
+<!--                },-->
+<!--                {-->
+<!--                    name:'oldA',-->
+<!--                    data:data.data-->
+<!--                }-->
+<!--            ]-->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
+<!--<script  type="text/javascript">-->
+<!--     var chartDom = document.getElementById('memory');-->
+<!--     var myChart = echarts.init(chartDom);-->
+<!--     myChart.setoption({-->
+<!--             title:{-->
+<!--                 // left:"5%",-->
+<!--                 text:'内存使用对比'-->
+<!--             },-->
+<!--             tooltip: {-->
+<!--                 trigger: 'axis'-->
+<!--             },-->
+<!--             legend: {-->
+<!--                 data: ['newA', 'oldA']-->
+<!--             },-->
+<!--             grid: {-->
+<!--                 left: '3%',-->
+<!--                 right: '4%',-->
+<!--                 bottom: '3%',-->
+<!--                 containLabel: true-->
+<!--             },-->
+<!--             toolbox: {-->
+<!--                 feature: {-->
+<!--                     saveAsImage: {}-->
+<!--                 }-->
+<!--             },-->
+<!--             xAxis: {-->
+<!--                 type: 'category',-->
+<!--                 data:  []-->
+<!--             },-->
+<!--             yAxis: {-->
+<!--                 type: 'value'-->
+<!--             },-->
+<!--             series: [-->
+<!--                 {-->
+<!--                     name: 'newA',-->
+<!--                     type: 'line',-->
+<!--                     smooth:true,-->
+<!--                     data:[]-->
+<!--                 },-->
+<!--                 {-->
+<!--                     name: 'oldA',-->
+<!--                     type: 'line',-->
+<!--                     smooth:true,-->
+<!--                     data:[]-->
+<!--                 },-->
+<!--             ]-->
+<!--     });-->
+<!--     $.get('dataMemory.json').done(function(data){-->
+<!--         mychart.setOption({-->
+<!--             xAxis:{-->
+<!--                 data:data.Categories-->
+<!--             },-->
+<!--             series:[-->
+
+<!--                 {-->
+<!--                     name:'newA',-->
+<!--                     data:data.data-->
+<!--                 },-->
+<!--                 {-->
+<!--                     name:'oldA',-->
+<!--                     data:data.data-->
+<!--                 }-->
+<!--             ]-->
+<!--         });-->
+<!--     });-->
+<!--</script>-->
+</body>
+</html>

@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>loadmapasyncHTML</title>
-<!--    <style type='text/css'>body{margin:0;padding:0;overflow:hidden;font-family:'Segoe UI',Helvetica,Arial,Sans-Serif}</style>-->
-    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
-    <script type='text/javascript' src='https://cn.bing.com/api/maps/mapcontrol?key=Ai4z67SFmR5vWrxe5ftXjMV0Zk0VZJX12kyFVJc5_elLbzAVHkCDpwgGpNvo8wIN'></script>
-    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
-    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="../JS/map.js"></script>
-    <script src="../JS/echarts.js"></script>
-    <link rel="stylesheet" href="../CSS/bingmap.css">
-</head>
-<body onload='loadMapScenario();' style="overflow: hidden">
-<div id='runtime'>
+    <title></title>
+    <meta charset="utf-8" />
 
-</div>
-<div id='memory'></div>
-    <script>setMemory()</script>
-<div id='myMap'></div>
+    <!-- Reference to the Bing Maps SDK -->
+    <script type='text/javascript'
+            src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Ai4z67SFmR5vWrxe5ftXjMV0Zk0VZJX12kyFVJc5_elLbzAVHkCDpwgGpNvo8wIN'
+            async defer></script>
+    <script type='text/javascript'>
+        function GetMap()
+        {
+            var map = new Microsoft.Maps.Map('#myMap');
+
+            //Add your post map load code here.
+        }
+    </script>
+</head>
+<body>
+<div id="myMap" style="position:relative;width:600px;height:400px;"></div>
 </body>
 </html>

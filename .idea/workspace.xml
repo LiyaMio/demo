@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ca6dc1b8-19e3-48c2-bf0e-a162d6acb40f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/bingmap.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/bingmap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/google map.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/google map.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/new map.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/new map.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/map.js" afterDir="false" />
     </list>
@@ -34,6 +36,13 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/LiyaMio/demo" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1vFUMZg0aRLvoYB9kPnMNurORuc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -87,7 +96,8 @@
       <workItem from="1632903135884" duration="28660000" />
       <workItem from="1634126589624" duration="404000" />
       <workItem from="1634647448096" duration="300000" />
-      <workItem from="1635075902305" duration="57947000" />
+      <workItem from="1635075902305" duration="70551000" />
+      <workItem from="1635935562332" duration="9088000" />
     </task>
     <servers />
   </component>
@@ -110,9 +120,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/HTML/google map.html</url>
-          <line>19</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/HTML/new map.html</url>
+          <line>86</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

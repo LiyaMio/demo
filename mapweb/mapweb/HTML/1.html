@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+  <button id="123">
+    1
+  </button>
+<script>
+  $(document).ready(function (){
+    $('#123').click(function (){
+      alert("sssssss")
+      $.ajax({
+        type:"get",
+        url:'/data',
+        dataType:'JSON',
+        success:function (data){
+          console.log(data.data)
+          for(var i=0;i<100;++i)
+          {
+            var center = new Microsoft.Maps.Location(data[i].longitude,data[i].latitude);
+            var pin = new Microsoft.Maps.Pushpin(center, {
+              // color:purple
+            });
+            console.log(center)
+            map.entities.push(pin);
+          }
+        }
+      });
+    })
+  })
+</script>
+</body>
+</html>

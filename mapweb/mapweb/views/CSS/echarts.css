@@ -1,0 +1,43 @@
+body{
+    overflow: hidden;
+}
+#runtime{
+    left:3vw;
+    top:5vh;
+    width: 30vw;
+    height:45vh;
+}
+#variance{
+    top:5vh;
+    left:3vw;
+    width: 30vw;
+    height:45vh;
+}
+#memory{
+    top:6vh;
+    left:34vw;
+    width: 30vw;
+    height:45vh;
+    position:absolute;
+}
+#c1{
+    top:51vh;
+    left:34vw;
+    width: 30vw;
+    height:45vh;
+    position:absolute;
+}
+#c2{
+    top:6vh;
+    left:66vw;
+    width: 30vw;
+    height:45vh;
+    position:absolute;
+}
+#c3{
+    top:51vh;
+    left:66vw;
+    width: 30vw;
+    height:45vh;
+    position:absolute;
+}

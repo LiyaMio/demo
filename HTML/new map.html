@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 </head>
-<body onload='loadMapScenario();' style="overflow: hidden">
+<body  onload="loadMapScenario();" style="overflow: hidden">
 <div id='myMap'></div>
 <div class="leftNav">
     <button class="btn btn-info" id="dataset" type="button" data-bs-toggle="offcanvas"
@@ -42,8 +42,8 @@
             </button>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item" type="button" onclick="chooseAlg(this)" id='DTW'>DTW</li>
-                <li class="list-group-item" type="button" onclick="chooseAlg()" id='LCSS'>LCSS</li>
-                <li class="list-group-item" type="button" onclick="chooseAlg()" id='test'>TEST</li>
+                <li class="list-group-item" type="button" onclick="chooseAlg(this)" id='LCSS'>LCSS</li>
+                <li class="list-group-item" type="button" onclick="chooseAlg(this)" id='test'>TEST</li>
 
             </ul>
         </div>
@@ -55,27 +55,35 @@
                 <div class="dropdown-submenu pull-down" >
                     <a class="dropdown-item" tabindex="-1" href="javascript:;" >1</a>
 
-                    <div class="dropdown-menu dropdown- realData " aria-labelledby="dropdownMenu1" style="height: 18vh;overflow:scroll;width:auto">
-                        <script>appendDAata()</script>
+                    <div class="dropdown-menu dropdown-  " aria-labelledby="dropdownMenu1" style="height: 18vh;overflow:scroll;width:auto" id="realData1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="test101" checked>
+                            <label class="form-check-label" for="test101">
+                                Default checkbox
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="test102" >
+                            <label class="form-check-label" for="test102">
+                                Checked checkbox
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <div class="dropdown-submenu" >
                     <a class="dropdown-item" tabindex="-1" href="javascript:;">2</a>
-                    <div class="dropdown-menu dropdown- realData" aria-labelledby="dropdownMenu1" style="height: 18vh;overflow:scroll">
-                        <script>appendDAata()</script>
+                    <div class="dropdown-menu dropdown-" aria-labelledby="dropdownMenu1" style="height: 18vh;overflow:scroll" id="realData2">
                     </div>
                 </div>
                 <div class="dropdown-submenu">
                     <a class="dropdown-item" tabindex="-1" href="javascript:;">3</a>
-                    <div class="dropdown-menu dropdown- realData" aria-labelledby="dropdownMenu1" style="height: 18vh;overflow:scroll">
-                        <script>appendDAata()</script>
+                    <div class="dropdown-menu dropdown-" aria-labelledby="dropdownMenu1" style="height: 18vh;overflow:scroll" id="realData3">
                     </div>
                 </div>
 
                 <div class="dropdown-submenu pull-up">
                     <a class="dropdown-item" tabindex="-1" href="javascript:;">3</a>
-                    <div class="dropdown-menu dropdown- realData" aria-labelledby="dropdownMenu1" style="height: 18vh;overflow:scroll">
-                        <script>appendDAata()</script>
+                    <div class="dropdown-menu dropdown-" aria-labelledby="dropdownMenu1" style="height: 18vh;overflow:scroll" id="realData4">
                         <script>mapping()</script>
                     </div>
                 </div>
@@ -88,6 +96,15 @@
         </div>
     </div>
 </div>
-
+<!--<script>alert(document.getElementById("test").parentElement.id)</script>-->
+<script>appendDAata()</script>
+<script>chooseData()</script>
+<!--<script type="text/javascript">-->
+<!--    function GetMap()-->
+<!--    {-->
+<!--        var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {});-->
+<!--        //Add your post map load code here.-->
+<!--    }-->
+<!--</script>-->
 </body>
 </html>
