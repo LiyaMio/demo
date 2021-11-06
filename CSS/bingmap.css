@@ -180,7 +180,7 @@ body {
     display: none; /* Chrome Safari */
 }
 .dropdown-menu{
-    min-width: 8rem;
+    min-width: 10rem;
 }
 a:focus{
     color:rgb(121,121,121);
@@ -190,5 +190,22 @@ a:focus{
 
 }
 .form-check{
-    padding-left:2.5rem;
+    padding-left:2.2rem;
+}
+.dropdown-item{
+    padding:0.5rem 1rem
+
+}
+.dropdown-{
+    min-width:3rem!important;
+}
+#normal_query{
+    /*padding-right: 0.05rem;*/
+    margin-right: 1rem;
+}
+#SHH-Taxi_query{
+    padding-right: 0.9rem;
+}
+#T-drive_query{
+    padding-right: 1.7rem;
 }

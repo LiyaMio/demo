@@ -53,37 +53,25 @@
             </button>
             <div class="dropdown-menu " aria-labelledby="dropdownMenu1" style="width: 5vw;opacity:100%">
                 <div class="dropdown-submenu pull-down" >
-                    <a class="dropdown-item" tabindex="-1" href="javascript:;" >1</a>
+                    <a class="dropdown-item" tabindex="-1" href="javascript:;" >normal_query</a>
 
-                    <div class="dropdown-menu dropdown-  " aria-labelledby="dropdownMenu1" style="height: 18vh;overflow:scroll;width:auto" id="realData1">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="test101" checked>
-                            <label class="form-check-label" for="test101">
-                                Default checkbox
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="test102" >
-                            <label class="form-check-label" for="test102">
-                                Checked checkbox
-                            </label>
-                        </div>
+                    <div class="dropdown-menu dropdown- " aria-labelledby="dropdownMenu1" style="height: 18vh;overflow:scroll;width:auto" id="normal_query">
                     </div>
                 </div>
                 <div class="dropdown-submenu" >
-                    <a class="dropdown-item" tabindex="-1" href="javascript:;">2</a>
-                    <div class="dropdown-menu dropdown-" aria-labelledby="dropdownMenu1" style="height: 18vh;overflow:scroll" id="realData2">
+                    <a class="dropdown-item" tabindex="-1" href="javascript:;">SHH-Taxi_query</a>
+                    <div class="dropdown-menu dropdown-" aria-labelledby="dropdownMenu1" style="height: 18vh;overflow:scroll" id="SHH-Taxi_query">
                     </div>
                 </div>
                 <div class="dropdown-submenu">
-                    <a class="dropdown-item" tabindex="-1" href="javascript:;">3</a>
-                    <div class="dropdown-menu dropdown-" aria-labelledby="dropdownMenu1" style="height: 18vh;overflow:scroll" id="realData3">
+                    <a class="dropdown-item" tabindex="-1" href="javascript:;">T-drive_query</a>
+                    <div class="dropdown-menu dropdown-" aria-labelledby="dropdownMenu1" style="height: 18vh;overflow:scroll" id="T-drive_query">
                     </div>
                 </div>
 
                 <div class="dropdown-submenu pull-up">
-                    <a class="dropdown-item" tabindex="-1" href="javascript:;">3</a>
-                    <div class="dropdown-menu dropdown-" aria-labelledby="dropdownMenu1" style="height: 18vh;overflow:scroll" id="realData4">
+                    <a class="dropdown-item" tabindex="-1" href="javascript:;">uniform_query</a>
+                    <div class="dropdown-menu dropdown-" aria-labelledby="dropdownMenu1" style="height: 18vh;overflow:scroll" id="uniform_query">
                         <script>mapping()</script>
                     </div>
                 </div>
@@ -91,14 +79,15 @@
         </div>
 
         <div class="choose">
-            <button type="button"  id="choice" class="btn btn-outline-secondary">choose</button>
+            <button type="button"  id="choice" class="btn btn-outline-secondary" onclick="chooseData()">choose</button>
             <a href="line.html"><button type="button" id="run" class="btn btn-outline-secondary">run</button></a>
         </div>
     </div>
 </div>
 <!--<script>alert(document.getElementById("test").parentElement.id)</script>-->
 <script>appendDAata()</script>
-<script>chooseData()</script>
+<script>addChecked()</script>
+<!--<script>chooseData()</script>-->
 <!--<script type="text/javascript">-->
 <!--    function GetMap()-->
 <!--    {-->
