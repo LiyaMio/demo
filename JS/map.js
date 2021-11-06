@@ -31,7 +31,7 @@ function loadMapScenario() {
 }
 
 function chooseData() {
-    for (var i = 1; i <= 102; ++i) {
+    for (var i = 1; i <= 400; ++i) {
         if (typeof ($("#test" + i + "").attr("checked")) != "undefined") {
             console.log(document.getElementById("test" + i + "").parentElement.parentElement.id);
             console.log(document.getElementById("test" + i + "").id);
