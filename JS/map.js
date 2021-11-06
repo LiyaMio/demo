@@ -27,6 +27,7 @@ function loadMapScenario() {
 
         //Add the pushpin to the map
         map.entities.push(pin);
+        map.entities.remove()
     }
 }
 
@@ -39,8 +40,8 @@ function chooseData() {
                 type: "POST",
                 url: '/chooseData',
                 data: {
-                    Amenu: document.getElementById("test" + i + "").parentElement.parentElement.id,
-                    Bmenu: document.getElementById("test" + i + "").id,
+                    // Amenu: document.getElementById("test" + i + "").parentElement.parentElement.id,
+                    Bmenu: i,
                 },
                 dataType: 'JSON',
             });
@@ -48,33 +49,42 @@ function chooseData() {
     }
 
 }
+var Menus= [];
 
 function runData() {
     var j = 0;
     var k = 0;
-    var Amenu
-    [];
-    var Bmenu
-    [];
-    for (var i = 1; i <= 102; ++i) {
+
+    for (var i = 1; i <= 400; ++i) {
         if (typeof ($("#test" + i + "").attr("checked")) != "undefined") {
-            console.log(document.getElementById("test" + i + "").parentElement.parentElement.id);
-            console.log(document.getElementById("test" + i + "").id);
-            Amenu[j++] = {Amenu: document.getElementById("test" + i + "").parentElement.parentElement.id};
-            Bmenu[k++] = {Bmenu: document.getElementById("test" + i + "").id}
-            console.log(Amenu);
-            console.log(Bmenu)
+            // console.log(document.getElementById("test" + i + "").parentElement.parentElement.id);
+            // console.log(document.getElementById("test" + i + "").id);
+            // Amenu[j++] = ;
+            // Bmenu[k++] = document.getElementById("test" + i + "").id;
+            // let tmpA={
+            //     Amenu:document.getElementById("test" + i + "").parentElement.parentElement.id
+            // };
+            // let tmpB={
+            //     Bmenu:document.getElementById("test" + i + "").id
+            // };
+            // Amenus.push(tmpA);
+            // Bmenus.push(tmpB);
+            var obj={};
+            obj.Amenu=document.getElementById("test" + i + "").parentElement.parentElement.id
+            obj.Bmenu=document.getElementById("test" + i + "").id;
+            Menus.push(obj);
+            // console.(Menus);
+            j++;
         }
     }
-    // $.ajax({
-    //     type: "POST",
-    //     url: '/rundata',
-    //     data: {
-    //         Amenu: document.getElementById("test" + i + "").parentElement.parentElement.id,
-    //         Bmenu: document.getElementById("test" + i + "").id,
-    //     },
-    //     dataType: 'JSON',
-    // });
+
+    $.ajax({
+        type: "POST",
+        url: '/rundata',
+        data: JSON.stringify(Menus),
+
+        dataType: 'JSON',
+    });
 }
 
 function chooseAlg(e) {
@@ -88,29 +98,14 @@ function chooseAlg(e) {
     });
 }
 
-function mapping() {
-    $(document).ready(function () {
-        $('.chooseData').click(function () {
-            // alert("sssssss")
-            $.ajax({
-                type: "get",
-                url: '/data',
-                dataType: 'JSON',
-                success: function (data) {
-                    console.log(data.data)
-                    for (var i = 0; i < 100; ++i) {
-                        var center = new Microsoft.Maps.Location(data[i].longitude, data[i].latitude);
-                        var pin = new Microsoft.Maps.Pushpin(center, {
-                            // color:purple
-                        });
-                        console.log(center)
-                        map.entities.push(pin);
-                    }
-                }
-            });
-        })
-    })
-}
+// function mapping() {
+//     $(document).ready(function () {
+//         $('.chooseData').click(function () {
+//             // alert("sssssss")
+//
+//         })
+//     })
+// }
 
 function appendDAata() {
 
@@ -172,8 +167,24 @@ function addChecked(e) {
             dataType: 'JSON',
         });
     } else {
-        alert("faile/d");
+        // alert("faile/d");
         $(e).attr('checked', false);
     }
+    $.ajax({
+        type: "get",
+        url: '/data',
+        dataType: 'JSON',
+        success: function (data) {
+            console.log(data.data)
+            for (var i = 0; i < 100; ++i) {
+                var center = new Microsoft.Maps.Location(data[i].longitude, data[i].latitude);
+                var pin = new Microsoft.Maps.Pushpin(center, {
+                    // color:purple
+                });
+                console.log(center)
+                map.entities.push(pin);
+            }
+        }
+    });
 
 }
